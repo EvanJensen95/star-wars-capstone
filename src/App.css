@@ -1,0 +1,283 @@
+body {
+  background-image: url("https://us.123rf.com/450wm/natalia0103/natalia01031508/natalia0103150800030/44239332-diepe-ruimte-achtergrond-met-sterren-.jpg?ver=6");
+  background-size: 650px;
+  background-attachment: fixed;
+}
+
+.Container {
+  margin: 0 auto;
+}
+
+.Galaxy {
+  text-align: center;
+  animation: fadeInFirst 2s ease-in;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #4bd5ee;
+  font-family: "News Cycle", sans-serif;
+  font-size: 50px;
+}
+.Cantina {
+  text-align: center;
+  animation: fadeInSecond 7s;
+  color: white;
+  font-family: "News Cycle", sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.Solo {
+  text-align: center;
+  animation: fadeInThird 8s;
+  color: white;
+  font-family: "News Cycle" sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.Alias {
+  text-align: center;
+  animation: fadeInFourth 12s;
+  color: white;
+  font-family: "News Cycle" sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.centerButton {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#getAlias {
+  width: 100px;
+  margin: auto;
+}
+@keyframes fadeInFirst {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: #4bd5ee;
+  }
+}
+@keyframes fadeInSecond {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes fadeInThird {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes fadeInFourth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+  }
+}
+
+#GetAlias {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.firstNameContainer {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.lastNameContainer {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.AliasButton {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.NewHomePlanet {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  animation: fadeInFifth 17s;
+}
+@keyframes fadeInFifth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes fadeInSixth {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: #4bd5ee;
+  }
+}
+
+#GetHomePlanet {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.YourHomePlanet {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.YourPlanetContainer {
+  margin: auto;
+  display: flex;
+  color: white;
+  width: 175px;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  animation: fadeInFifth 17s;
+}
+.HomePlanetButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.Characters {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.yourName {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.yourHomePlanet {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 17s;
+}
+.Questions {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInFifth 20s;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  border: 3px solid #4bd5ee;
+  background-color: white;
+  color: #4bd5ee;
+  font-weight: bold;
+  border-radius: 45%;
+  width: 15%;
+  animation: fadeInSixth 10s;
+}
+.options:hover {
+  background-color: rgb(141, 252, 108);
+}
+.EndOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  border: 3px solid black;
+  background-color: white;
+  color: #4bd5ee;
+  font-weight: bold;
+  border-radius: 45%;
+  width: 20%;
+  animation: fadeInSixth 2s;
+}
+
+.NextQButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.QuizEnd {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
