@@ -53,11 +53,12 @@ function People({ data }) {
         ))}
       </div>
 
-      <h2>
+      <h3>
         Now it is time for you to embark on your smuggling journey to not only
         deliver the shipment and earn some credits, but to also put your Star
         Wars fandom to the test!
-      </h2>
+      </h3>
+      <br />
     </div>
   );
 }

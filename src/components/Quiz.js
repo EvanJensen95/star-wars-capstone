@@ -78,17 +78,18 @@ export class Quiz extends Component {
     if (quizEnd) {
       return (
         <div className="QuizEnd">
-          <h1>Your final score is {this.state.score} points out of 15!</h1>
-          <h2>
-            You have reached the end of your smuggling journey! As well as completed the test to see 
-            you recieved a score of 12 or higher, you're a true Star Wars fan.
+          <h2>Your final score is {this.state.score} points out of 20!</h2>
+          <h3>
+            You have reached the end of your smuggling journey! As well as
+            completed the test to see you recieved a score of 17 or higher,
+            you're a true Star Wars fan.
             <br />
-            If you recieved anything less than 12, you need to do some studying!
-          </h2>
-          <p>
+            If you recieved anything less than 17, you need to do some studying!
+          </h3>
+          <h7>
             If you would like to know where you went wrong, here are the correct
             answers to all the questions
-          </p>
+          </h7>
 
           <ol type="1">
             {QuizData.map((item, index) => (

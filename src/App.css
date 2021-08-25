@@ -307,7 +307,7 @@ body {
   display: inline-block;
   margin-bottom: 1em;
   padding-left: 2.5em;
-  color: black;
+  color: black
 
   /* flex-direction: row; */
   /* grid-template-columns: repeat(3, 100px [col-start]);
