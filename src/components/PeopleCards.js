@@ -60,7 +60,7 @@ function PeopleCards(props) {
   return (
     <div>
       <div>
-        <Card style={{ width: "15rem" }} key={charName}>
+        <Card style={{ width: "16rem" }} key={charName}>
           <Card.Img
             variant="top"
             src={`https://raw.githubusercontent.com/EvanJensen95/star-wars-capstone/main/images/${charName}.jpeg?raw=true`}

@@ -34,17 +34,22 @@ function Planet() {
         Now lets get you a new home planet in case we get, you know, into more
         trouble than we would like...
       </h2>
+      <br />
       <h2 id="GetHomePlanet">
         Your New Home Planet:&nbsp; <span>{randomHomePlanet}</span>
       </h2>
       <div className="yourHomePlanet">
+        <br />
         <h4>
           Your Old Home Planet:&nbsp; <span>{homePlanet}</span>
         </h4>
       </div>
       <div>
         <div className="YourPlanetContainer">
-          <h5 className="YourHomePlanet">Your Home Planet:</h5>
+          <br />
+          <h6 className="YourHomePlanet">
+            Please type in your current home planet:
+          </h6>
           <input
             type="string"
             onChange={(e) => setHomePlanet(e.target.value)}

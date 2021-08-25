@@ -102,7 +102,7 @@ export const QuizData = [
   {
     id: 11,
     question: "How tall is Chewbacca?",
-    options: ["215", "228", "255", "302"],
+    options: ["215 cm", "228 cm", "255 cm", "302 cm"],
     answer: "228",
   },
   {

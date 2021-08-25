@@ -31,12 +31,13 @@ function People({ data }) {
         Now that you have your alias and new home planet, lets get the crew
         asembled!
       </h2>
-      <h3>
-        Check out the "smugglers" avaliable below and choose 3 to join your
-        team!
-      </h3>
+      <br />
+      <h4>
+        Take your pick from those willing to embark on this journey with you
+      </h4>
       <div>
-        <h2>Smugglers for Hire</h2>
+        <br />
+        <h2>Smugglers for Hire:</h2>
         {character.map((x) => (
           <div className="PeopleInfoDiv col-lg-4 col-md-4 col-sm-4">
             <PeopleCards
@@ -54,7 +55,7 @@ function People({ data }) {
 
       <h2>
         Now it is time for you to embark on your smuggling journey to not only
-        deliver the shipment and earn some credits, but to also but your Star
+        deliver the shipment and earn some credits, but to also put your Star
         Wars fandom to the test!
       </h2>
     </div>
