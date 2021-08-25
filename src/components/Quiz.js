@@ -78,16 +78,18 @@ export class Quiz extends Component {
     if (quizEnd) {
       return (
         <div className="QuizEnd">
-          <h1>Your final score is {this.state.score} points out of 10!</h1>
+          <h1>Your final score is {this.state.score} points out of 15!</h1>
           <h2>
-            You have reached the end of your journey to deliver the Spice, if
-            you recieved a score of 8 or higher, you're a true Star Wars fan. If
-            you recieved anything less than 8, you need to do some studying!
+            You have reached the end of your smuggling journey! As well as completed the test to see 
+            you recieved a score of 12 or higher, you're a true Star Wars fan.
+            <br />
+            If you recieved anything less than 12, you need to do some studying!
           </h2>
           <p>
             If you would like to know where you went wrong, here are the correct
             answers to all the questions
           </p>
+
           <ol type="1">
             {QuizData.map((item, index) => (
               <li className="EndOptions" key={index}>
@@ -95,11 +97,18 @@ export class Quiz extends Component {
               </li>
             ))}
           </ol>
+
+          <h2 className="EndCredits">
+            Whether or not you succeeded or not on your mission to deliver the
+            cargo with Han Solo and Chewbacca, along with your chosen crew
+            members, I hope you had a blast!
+          </h2>
+          <h1 className="MTFBWY">May The Force Be With You</h1>
         </div>
       );
     }
     return (
-      <div>
+      <div className="AnswersDiv">
         <h2 className="Questions">{question}</h2>
         <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
         {options.map((option) => (
@@ -121,7 +130,11 @@ export class Quiz extends Component {
           </button>
         )}
         {currentIndex === QuizData.length - 1 && (
-          <button onClick={this.finishHandler} disabled={this.state.disabled}>
+          <button
+            className="FinishButton"
+            onClick={this.finishHandler}
+            disabled={this.state.disabled}
+          >
             Finish
           </button>
         )}

@@ -81,28 +81,29 @@ function Alias() {
         better yet, an alias! I mean, your name is fine but it seems a little
         too Earthy...
       </h2>
+      <br />
       <div className="randomAlias">
         <h2 id="GetAlias">
           Your Alias:&nbsp; <span>{randomAlias}</span>
         </h2>
       </div>
       <div className="yourName">
-        <h3>
+        <h4>
           Your Old Name:&nbsp;{" "}
           <span>
             {firstName} {lastName}
           </span>
-        </h3>
+        </h4>
       </div>
       <div className="firstNameContainer">
         <div>
-          <h3>Your First Name:</h3>
+          <h5>Your First Name:</h5>
           <input type="string" onChange={(e) => setFirstName(e.target.value)} />
         </div>
       </div>
       <div className="lastNameContainer">
         <div>
-          <h3>Your Last Name:</h3>
+          <h5>Your Last Name:</h5>
           <input type="string" onChange={(e) => setLastName(e.target.value)} />
         </div>
         <br />

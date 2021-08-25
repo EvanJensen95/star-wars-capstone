@@ -1,9 +1,9 @@
 export const QuizData = [
   {
     id: 0,
-    question: "How tall is Chewbacca?",
-    options: ["215", "228", "255", "302"],
-    answer: "228",
+    question: "Do you consider yourself a Star Wars fan?",
+    options: ["Yes", "Yes", "Yes", "Yes"],
+    answer: "Yes",
   },
   {
     id: 1,
@@ -98,5 +98,41 @@ export const QuizData = [
       "Over 60,000,000",
     ],
     answer: "Over 60,000,000",
+  },
+  {
+    id: 11,
+    question: "How tall is Chewbacca?",
+    options: ["215", "228", "255", "302"],
+    answer: "228",
+  },
+  {
+    id: 12,
+    quesiton: "Who was Count Dooku’s padawan before he left the Jedi?",
+    options: ["Luke Skywalker", "Anakin Skywalker", "Plo Koon", "Qui-Gon-Jinn"],
+    answer: "Qui-Gon-Jinn",
+  },
+  {
+    id: 13,
+    question:
+      "In Return of The Jedi, what planet is the second Death Star orbiting?",
+    options: ["Endor", "Naboo", "Hoth", "Alderaan"],
+    answer: "Endor",
+  },
+  {
+    id: 14,
+    question: "What did Han and Luke ride on in the snow while in Hoth?",
+    options: ["Dewback", "Blurrg", "Tauntaun", "Bantha"],
+    answer: "Tauntaun",
+  },
+  {
+    id: 15,
+    question: "Who is the creator of Star Wars?",
+    options: [
+      "J.J. Abrahms",
+      "George Lucas",
+      "Kathleen Kennedy",
+      "Dave Filoni",
+    ],
+    answer: "George Lucas",
   },
 ];
