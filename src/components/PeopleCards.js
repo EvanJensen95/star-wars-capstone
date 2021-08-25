@@ -8,9 +8,13 @@ function PeopleCards(props) {
   const [charGender, setCharGender] = useState("");
   const [charHairColor, setCharHairColor] = useState("");
   const [charBirthYear, setCharBirthYear] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
 
   useEffect(() => {
-    // setImgUrl(`the url with ${charName}`)
+    setImageUrl(
+      `https://raw.githubusercontent.com/EvanJensen95/star-wars-capstone/main/images/${charName}.png?raw=true`
+    );
+
     setCharName(props.name);
     setCharHeight(props.height);
     setCharMass(props.mass);
@@ -59,9 +63,7 @@ function PeopleCards(props) {
         <Card style={{ width: "15rem" }} key={charName}>
           <Card.Img
             variant="top"
-            src={
-              "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fdorksideoftheforce.com%2Ffiles%2F2021%2F01%2FLuke-Skywalker-Return-of-the-Jedi.jpg"
-            }
+            src={`https://raw.githubusercontent.com/EvanJensen95/star-wars-capstone/main/images/${charName}.jpeg?raw=true`}
           />
           <Card.Body>
             <Card.Title>{charName}</Card.Title>
