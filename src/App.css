@@ -307,11 +307,15 @@ body {
   display: inline-block;
   margin-bottom: 1em;
   padding-left: 2.5em;
-  color: black
+  color: black;
 
   /* flex-direction: row; */
   /* grid-template-columns: repeat(3, 100px [col-start]);
   grid-template-rows: repeat(3, 300px [row-start]); */
+}
+.CardImages {
+  height: 8.8rem;
+  object-fit: fill;
 }
 ul {
   list-style-type: none;

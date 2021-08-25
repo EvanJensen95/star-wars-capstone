@@ -32,9 +32,7 @@ function People({ data }) {
         asembled!
       </h2>
       <br />
-      <h4>
-        Take your pick from those willing to embark on this journey with you
-      </h4>
+
       <div>
         <br />
         <h2>Smugglers for Hire:</h2>
@@ -51,6 +49,12 @@ function People({ data }) {
             />
           </div>
         ))}
+      </div>
+      <div>
+        <textarea type="text" placeholder="Your 3 choices here"></textarea>
+        <br />
+        <br />
+        <button type="select">Submit you Choices</button>
       </div>
 
       <h3>

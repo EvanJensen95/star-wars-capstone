@@ -12,7 +12,7 @@ function PeopleCards(props) {
 
   useEffect(() => {
     setImageUrl(
-      `https://raw.githubusercontent.com/EvanJensen95/star-wars-capstone/main/images/${charName}.png?raw=true`
+      `https://raw.githubusercontent.com/EvanJensen95/star-wars-capstone/main/images/${charName}.jpeg`
     );
 
     setCharName(props.name);
@@ -28,6 +28,7 @@ function PeopleCards(props) {
     props.gender,
     props.hair_color,
     props.birth_year,
+    charName,
   ]);
 
   //   const cardInfo = [
@@ -61,10 +62,7 @@ function PeopleCards(props) {
     <div>
       <div>
         <Card style={{ width: "16rem" }} key={charName}>
-          <Card.Img
-            variant="top"
-            src={`https://raw.githubusercontent.com/EvanJensen95/star-wars-capstone/main/images/${charName}.jpeg?raw=true`}
-          />
+          <Card.Img className="CardImages" variant="top" src={imageUrl} />
           <Card.Body>
             <Card.Title>{charName}</Card.Title>
             <Card.Text>Height: {charHeight} cm</Card.Text>
