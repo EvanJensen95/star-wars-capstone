@@ -21,7 +21,6 @@ function PeopleCards(props) {
     setCharGender(props.gender);
     setCharHairColor(props.hair_color);
     setCharBirthYear(props.birth_year);
-    setImageUrl(props.imageUrl);
   }, [
     props.name,
     props.height,
@@ -29,7 +28,6 @@ function PeopleCards(props) {
     props.gender,
     props.hair_color,
     props.birth_year,
-    props.imageUrl,
   ]);
 
   //   const cardInfo = [
