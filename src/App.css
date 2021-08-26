@@ -236,14 +236,15 @@ body {
   background-color: white;
   color: #4bd5ee;
   font-weight: bold;
-  border-radius: 45%;
+  border-radius: 15%;
   width: 15%;
   animation: fadeInSixth 10s;
 }
 .options:hover {
-  background-color: rgb(141, 252, 108);
+  background-image: url("https://st3.depositphotos.com/1310390/13936/v/600/depositphotos_139367812-stock-illustration-speed-warp-vector-background-radiator.jpg");
+  background-position: center;
 }
-.RightAnswers .EndOptions {
+.RightAnswers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +254,7 @@ body {
   background-color: white;
   color: #4bd5ee;
   font-weight: bold;
-  border-radius: 45%;
+  border-radius: 5%;
   width: 20%;
   animation: fadeInSixth 2s;
   align-items: center;
@@ -306,7 +307,7 @@ body {
 .PeopleInfoDiv {
   display: inline-block;
   margin-bottom: 1em;
-  padding-left: 2.5em;
+  padding-left: 3.4em;
   color: black;
 
   /* flex-direction: row; */

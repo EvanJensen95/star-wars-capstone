@@ -47,11 +47,10 @@ function Planet() {
       <div>
         <div className="YourPlanetContainer">
           <br />
-          <h6 className="YourHomePlanet">
-            Please type in your current home planet:
-          </h6>
+
           <input
             type="string"
+            placeholder="Your Home Planet"
             onChange={(e) => setHomePlanet(e.target.value)}
           />
         </div>
@@ -67,6 +66,7 @@ function Planet() {
           </Button>
         </div>
       </div>
+      <br />
     </div>
   );
 }

@@ -99,15 +99,21 @@ function Alias() {
       <div className="firstNameContainer">
         <div>
           <br />
-          <h6>Your Current First Name:</h6>
-          <input type="string" onChange={(e) => setFirstName(e.target.value)} />
+          <input
+            type="string"
+            placeHolder="Your First Name"
+            onChange={(e) => setFirstName(e.target.value)}
+          />
         </div>
       </div>
       <div className="lastNameContainer">
         <div>
           <br />
-          <h6>Your Current Last Name:</h6>
-          <input type="string" onChange={(e) => setLastName(e.target.value)} />
+          <input
+            type="string"
+            placeHolder="Your Last Name"
+            onChange={(e) => setLastName(e.target.value)}
+          />
         </div>
         <br />
         <div className="AliasButton">

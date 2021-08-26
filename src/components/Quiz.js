@@ -100,9 +100,9 @@ export class Quiz extends Component {
           </ol>
 
           <h2 className="EndCredits">
-            Whether or not you succeeded or failed on your mission to deliver
-            the cargo and put your Star Wars knowledge to the test, I hope you
-            had a blast!
+            Whether you succeeded or failed on your mission to deliver the cargo
+            and put your Star Wars knowledge to the test, I hope you had a
+            blast!
           </h2>
           <h1 className="MTFBWY">May The Force Be With You</h1>
         </div>

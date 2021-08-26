@@ -50,12 +50,14 @@ function People({ data }) {
           </div>
         ))}
       </div>
+      <br />
       <div>
         <textarea type="text" placeholder="Your 3 choices here"></textarea>
         <br />
         <br />
         <button type="select">Submit you Choices</button>
       </div>
+      <br />
 
       <h3>
         Now it is time for you to embark on your smuggling journey to not only
