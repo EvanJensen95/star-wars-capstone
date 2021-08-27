@@ -318,6 +318,11 @@ body {
   height: 8.8rem;
   object-fit: fill;
 }
+.CharChoicesBox {
+  width: 18em;
+  padding-right: 2px;
+}
+
 ul {
   list-style-type: none;
 }

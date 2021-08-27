@@ -35,7 +35,7 @@ function People({ data }) {
 
       <div>
         <br />
-        <h2>Smugglers for Hire:</h2>
+        <h3>Smugglers for Hire:</h3>
         {character.map((x) => (
           <div className="PeopleInfoDiv col-lg-4 col-md-4 col-sm-4">
             <PeopleCards
@@ -52,10 +52,14 @@ function People({ data }) {
       </div>
       <br />
       <div>
-        <textarea type="text" placeholder="Your 3 choices here"></textarea>
+        <textarea
+          className="CharChoicesBox"
+          type="text"
+          placeholder="Your 3 choices here"
+        ></textarea>
         <br />
         <br />
-        <button type="select">Submit you Choices</button>
+        <button type="select">Submit your choices</button>
       </div>
       <br />
 

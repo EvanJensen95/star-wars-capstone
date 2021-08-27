@@ -76,11 +76,11 @@ function Alias() {
 
   return (
     <div className="centerButton">
-      <h2 className="Alias">
+      <h3 className="Alias">
         Before you round up some extra help, we need to get you a new name, or
         better yet, an alias! I mean, your name is fine but it seems a little
         too Earthy...
-      </h2>
+      </h3>
       <br />
       <div className="randomAlias">
         <h2 id="GetAlias">

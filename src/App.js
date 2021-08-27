@@ -7,6 +7,7 @@ import People from "./components/People";
 import Quiz from "./components/Quiz";
 // import PeopleCards from "./components/PeopleCards";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./components/auth/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <People />
         {/* <PeopleCards /> */}
         <Quiz />
+        <Login />
       </div>
     </div>
   );

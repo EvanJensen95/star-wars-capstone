@@ -30,10 +30,10 @@ function Planet() {
   };
   return (
     <div className="Planets">
-      <h2 className="NewHomePlanet">
+      <h3 className="NewHomePlanet">
         Now lets get you a new home planet in case we get, you know, into more
         trouble than we would like...
-      </h2>
+      </h3>
       <br />
       <h2 id="GetHomePlanet">
         Your New Home Planet:&nbsp; <span>{randomHomePlanet}</span>
