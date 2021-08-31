@@ -368,11 +368,12 @@ ul li {
 .WelcomeLogIn {
   color: white;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 5em;
 }
 .Successful {
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 .Intro {
   color: white;

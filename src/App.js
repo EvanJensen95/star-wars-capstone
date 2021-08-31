@@ -21,7 +21,7 @@ function Account() {
     <div className="App container">
       <div className="row">
         <div>
-          <h6 className="UserID">Current User: {userID()}</h6>
+          <h5 className="UserID">Current User: {userID()}</h5>
           <button className="signOutBtn" onClick={signOut}>
             Sign Out
           </button>

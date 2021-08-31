@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useEasybase } from "easybase-react";
+import { Alert } from "bootstrap";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -46,6 +47,10 @@ function Login() {
           Where you will embark on a journey across the Galaxy to put your Star
           Wars knowledge to the test!
         </h3>
+        <h5 className="Intro">
+          You will complete a series of tasks to get you ready for your journey,
+          if you are up for the challenge please register and log in!
+        </h5>
       </div>
 
       <div className="LogIn">
