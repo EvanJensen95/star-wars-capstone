@@ -1,6 +1,8 @@
 import React from "react";
+// import {useEasybase} from 'easybase-react'
 
 function Home() {
+  // const { userID } = useEasybase();
   return (
     <div className="Container">
       <h1 className="Galaxy">

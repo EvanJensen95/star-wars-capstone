@@ -60,7 +60,7 @@ function PeopleCards(props) {
   //   const renderCard = (card, index) => {
   return (
     <div>
-      <div>
+      <div className="PeopleCards">
         <Card style={{ width: "16rem" }} key={charName}>
           <Card.Img className="CardImages" variant="top" src={imageUrl} />
           <Card.Body>

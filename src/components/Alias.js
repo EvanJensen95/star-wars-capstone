@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "semantic-ui-react";
+import {useEasybase} from 'easybase-react'
 
 function Alias() {
   const firstNameArr = [
@@ -68,6 +69,7 @@ function Alias() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   let [randomAlias, setRandomAlias] = useState("");
+  const {db} = useEasybase();
 
   const handleRandomAlias = () => {
     const randomIndex = Math.floor(Math.random() * 28);

@@ -307,12 +307,20 @@ body {
 .PeopleInfoDiv {
   display: inline-block;
   margin-bottom: 1em;
-  padding-left: 3.4em;
+  padding-right: 4em;
+  padding-left: 4em;
   color: black;
 
   /* flex-direction: row; */
   /* grid-template-columns: repeat(3, 100px [col-start]);
   grid-template-rows: repeat(3, 300px [row-start]); */
+}
+.PeopleCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
 .CardImages {
   height: 8.8rem;
@@ -320,7 +328,8 @@ body {
 }
 .CharChoicesBox {
   width: 18em;
-  padding-right: 2px;
+  padding-right: 2em;
+  margin: auto;
 }
 
 ul {
@@ -328,6 +337,70 @@ ul {
 }
 ul li {
   margin: 5px;
+}
+.RegisterButtonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+.LoginButtonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.UserID {
+  display: flex;
+  float: left;
+  margin-top: 1em;
+  color: white;
+}
+.signOutBtn {
+  display: flex;
+  float: right;
+  margin-top: 1em;
+  color: #4bd5ee;
+}
+.signOutBtn:hover {
+  background-image: url("https://st3.depositphotos.com/1310390/13936/v/600/depositphotos_139367812-stock-illustration-speed-warp-vector-background-radiator.jpg");
+  background-position: center;
+}
+.WelcomeLogIn {
+  color: white;
+  text-align: center;
+  margin-top: 3em;
+}
+.Successful {
+  color: white;
+  text-align: center;
+}
+.Intro {
+  color: white;
+  text-align: center;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+.FormLabel {
+  color: white;
+  margin-left: 2em;
+}
+.RegisterandLoginBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+}
+.EmailPasswordContainer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  width: 15em;
+  padding: 1em;
+}
+.Register {
+  margin-top: 1em;
 }
 
 /* width */

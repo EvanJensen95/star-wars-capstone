@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import { useEasybase } from "easybase-react";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -8,12 +9,8 @@ function Login() {
 
   function formValidate() {
     return (
-      userName.match(
-        /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
-      ) &&
-      password.match(
-        /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
-      )
+      userName.length > 0 && password.length > 0
+      // /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
     );
   }
 
@@ -21,7 +18,7 @@ function Login() {
     e.preventDefault();
   }
 
-  const { signIn, register } = useEasybase();
+  const { signIn, signUp } = useEasybase();
 
   const clearInputs = () => {
     setUserName("");
@@ -34,56 +31,68 @@ function Login() {
   };
 
   const handleRegisterPress = async () => {
-    await register(userName, password, {
+    await signUp(userName, password, {
       created_at: new Date().toString,
     });
+    clearInputs();
+    setSuccess("You are successfully signed up, please continue to sign in");
   };
-  clearInputs();
-  setSuccess("You are successfully signed up, please continue to sign in");
 
   return (
     <div className="LogInMain">
       <div className="WelcomeToApp">
-        <h2>Welcome to Smugglers Journey</h2>
+        <h1 className="WelcomeLogIn">Welcome to Smugglers Journey</h1>
+        <h3 className="Intro">
+          Where you will embark on a journey across the Galaxy to put your Star
+          Wars knowledge to the test!
+        </h3>
       </div>
+
       <div className="LogIn">
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="UserNameInput">
-            <Form.Label>Username</Form.Label>
-            <Form.Control
-              type="username"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group className="PasswordInput">
-            <Form.Label></Form.Label>
-            <Form.Control
-              type="password"
-              value={password}
-              onChange={(e) => setUserName(e.target.value)}
-            />
-          </Form.Group>
+        <div className="EmailPasswordContainer">
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="EmailInput">
+              <Form.Control
+                type="username"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+                placeholder="Email"
+              />
+            </Form.Group>
 
-          <div className="ButtonDiv">
-            <Button
-              onClick={handleRegisterPress}
-              type="submit"
-              disabled={formValidate()}
-            >
-              Register
-            </Button>
+            <div className="Register">
+              <Form.Group>
+                <Form.Control
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="Password"
+                />
+              </Form.Group>
+            </div>
 
-            <Button
-              onClick={handleLogInPress}
-              type="submit"
-              disabled={formValidate()}
-            >
-              Login
-            </Button>
-          </div>
-          <h2 className="Successful">{success}</h2>
-        </Form>
+            <div className="RegisterButtonDiv">
+              <Button
+                onClick={handleRegisterPress}
+                type="submit"
+                disabled={!formValidate()}
+              >
+                Register
+              </Button>
+            </div>
+            <div className="LoginButtonDiv">
+              <Button
+                onClick={handleLogInPress}
+                type="submit"
+                disabled={!formValidate()}
+              >
+                Login
+              </Button>
+            </div>
+
+            <h2 className="Successful">{success}</h2>
+          </Form>
+        </div>
       </div>
     </div>
   );

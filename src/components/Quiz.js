@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { QuizData } from "../QuizData";
+// import { useEasybase } from "easybase-react";
 
 export class Quiz extends Component {
   constructor(props) {
