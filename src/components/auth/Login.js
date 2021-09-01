@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useEasybase } from "easybase-react";
-import { Alert } from "bootstrap";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -10,7 +9,7 @@ function Login() {
 
   function formValidate() {
     return (
-      userName.length > 0 && password.length > 0
+      userName.length > 0 && password.length >= 8
       // /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
     );
   }
@@ -36,7 +35,7 @@ function Login() {
       created_at: new Date().toString,
     });
     clearInputs();
-    setSuccess("You are successfully signed up, please continue to sign in");
+    setSuccess("Successfully Registered");
   };
 
   return (
@@ -73,6 +72,9 @@ function Login() {
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
                 />
+                <h6 style={{ color: "grey", textAlign: "center" }}>
+                  Minimum of 8 characters
+                </h6>
               </Form.Group>
             </div>
 
@@ -94,8 +96,9 @@ function Login() {
                 Login
               </Button>
             </div>
-
-            <h2 className="Successful">{success}</h2>
+            <div className="Successful">
+              <h2>{success}</h2>
+            </div>
           </Form>
         </div>
       </div>

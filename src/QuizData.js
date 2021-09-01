@@ -168,4 +168,15 @@ export const QuizData = [
     options: ["Fear", "Your enemy", "Darkness", "The Sith"],
     answer: "Fear",
   },
+  {
+    id: 21,
+    question:
+      "What was the order that Emperor Palpatine put into affect that made the clones kill the Jedi?",
+    options: ["11", "25", "119", "66"],
+    answer: "66",
+  },
+  // {
+  //   id: 22,
+  //   question: ""
+  // }
 ];
