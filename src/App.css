@@ -378,6 +378,7 @@ ul li {
   float: right;
   margin-top: 1em;
   color: #4bd5ee;
+  box-shadow: 0 0 10px #4bd5ee, 0 0 20px #4bd5ee;
 }
 .signOutBtn:hover {
   background-image: url("https://st3.depositphotos.com/1310390/13936/v/600/depositphotos_139367812-stock-illustration-speed-warp-vector-background-radiator.jpg");
@@ -431,7 +432,7 @@ ul li {
 /* Track */
 ::-webkit-scrollbar-track {
   background-color: black;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow-x: unset;
   height: 100vh;
 }
@@ -440,7 +441,8 @@ ul li {
 ::-webkit-scrollbar-thumb {
   background: #4bd5ee;
   box-shadow: 0 0 10px #4bd5ee, 0 0 20px #4bd5ee, 0 0 40px #4bd5ee,
-    0 0 80px #4bd5ee, 0 0 120px #4bd5ee;
-  border-radius: 10px;
+    0 0 80px #4bd5ee, 0 0 120px #4bd5ee, 0 0 180px #4bd5ee, 0 0 240px #4bd5ee,
+    0 0 300px #4bd5ee;
+  border-radius: 15px;
   /* overflow-x: visible; */
 }

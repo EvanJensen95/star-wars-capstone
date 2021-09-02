@@ -175,8 +175,58 @@ export const QuizData = [
     options: ["11", "25", "119", "66"],
     answer: "66",
   },
-  // {
-  //   id: 22,
-  //   question: ""
-  // }
+  {
+    id: 22,
+    question: "True or False, Boba Fett survived the Sarlacc pit",
+    options: ["True", "False"],
+    answer: "True"
+  },
+  {
+    id: 23,
+    quesiton: "Where does Rey find Luke Skywalker?",
+    options: ["Ahch-To", "Arvina", "Korrus", "Orvax"],
+    answer: "Ahch-To"
+  },
+  {
+    id: 24,
+    question: "Which actor played Luke Skywalker?",
+    options: ["Harrison Ford", "Ewan McGregor", "Mark Hamill", "Liam Neeson"],
+    answer: "Mark Hamill"
+  },
+  {
+    id: 25,
+    question: "What episode is Attack of the Clones?",
+    options: ["1", "2", "3", "4"],
+    answer: "2"
+  },
+  {
+    id: 26,
+    question: "Leia said never underestimate a what?",
+    options: ["A Jedi", "A Woman", "An X-Wing Pilot", "A Droid"],
+    answer: "A Droid"
+  },
+  {
+    id: 27,
+    question: "Who killed Han Solo?",
+    options: ["Finn", "Kylo Ren", "Snoke", "Rey"],
+    answer: "Kylo Ren"
+  },
+  {
+    id: 28,
+    question: "Who famously said, “These aren’t the droids you’re looking for”?",
+    options: ["Obi-Wan", "Anakin", "Princess Leia", "Yoda"],
+    answer: "Obi-Wan"
+  }, 
+  {
+    id: 29,
+    question: "Which bounty hunter in The Empire Strikes Back is wearing an old costume from a Doctor Who episode?",
+    options: ["Boba Fett", "IG-88", "Bossk", "Zuckuss"],
+    answer: "Bossk"
+  },
+  {
+    id: 30,
+    question: "Who actually shot first?",
+    options: ["Han Solo", "Greedo"],
+    answer: "Han Solo"
+  }
 ];
