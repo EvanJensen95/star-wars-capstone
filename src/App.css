@@ -243,6 +243,7 @@ body {
 .options:hover {
   background-image: url("https://st3.depositphotos.com/1310390/13936/v/600/depositphotos_139367812-stock-illustration-speed-warp-vector-background-radiator.jpg");
   background-position: center;
+  box-shadow: 0 0 10px #4bd5ee, 0 0 20px #4bd5ee;
 }
 .RightAnswers {
   display: flex;
@@ -266,6 +267,9 @@ body {
   justify-content: center;
   text-align: center;
 }
+/* .NextQButton:hover {
+  box-shadow: 0 0 10px #4bd5ee, 0 0 20px #4bd5ee;
+} */
 
 .QuizEnd {
   display: flex;
@@ -378,11 +382,12 @@ ul li {
   float: right;
   margin-top: 1em;
   color: #4bd5ee;
-  box-shadow: 0 0 10px #4bd5ee, 0 0 20px #4bd5ee;
 }
+
 .signOutBtn:hover {
   background-image: url("https://st3.depositphotos.com/1310390/13936/v/600/depositphotos_139367812-stock-illustration-speed-warp-vector-background-radiator.jpg");
   background-position: center;
+  box-shadow: 0 0 10px #4bd5ee, 0 0 20px #4bd5ee;
 }
 .WelcomeLogIn {
   color: rgb(254, 254, 76);
